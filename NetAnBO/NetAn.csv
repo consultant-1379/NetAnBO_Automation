@@ -1,0 +1,3 @@
+OSS_ID,NE_NAME,Date,Time,NumberofOfferedSessionBindingEstablishmentsperSecond,TransactionSuccess(%),NumberofInternallyConsumedRequests,SessionBindingEstablishmentSuccess(%),HxTransactionSuccessRateonClientSide(%),HxTransactionSuccessRateonServerSide(%)
+OSS_ID,NE_NAME,Date,Time,MessageSignalUnitSuccessRate(%)
+OSS_ID,NE_NAME,Date,Time,IncomingTransactionSuccessRateperPeer(%),OutgoingTransactionSuccessRateperPeer(%)

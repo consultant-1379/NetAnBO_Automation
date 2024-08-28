@@ -1,0 +1,25 @@
+Steps to follow.
+
+Prerequisites:
+1) Make sure python 3.x is installed on your server. (Its already installed on HUB)
+2) Install python modules:
+	i) Open powershell
+		Type : pip install fitz
+			   pip install pytesseract
+3) Download and install tesseract for Windows.
+	i) Open https://github.com/UB-Mannheim/tesseract/wiki in browser and download the 64 bit version.
+	ii) Install the downloaded file. Note the path where it is installed.
+	
+
+Steps:
+1) Copy NetAnBO_Chart folder to your server.
+2) Copy BO report pdf files to BO folder.
+3) Open powershell. cd to NetAnBO_Chart folder.
+	Run-  python create_dir.py
+	This will create directories with same name as BO pdf file in NetAn folder.
+	Place you Netan chart pdf file inside the created folders
+4)Run in same powershell
+	python master.py <path where teserract windows in installed>
+	Eg.
+	python master.py C:\Users\zmudshu\AppData\Local\Programs\Tesseract-OCR
+5) Missing kpi text files will be created for each report in Missing KPI folder.
